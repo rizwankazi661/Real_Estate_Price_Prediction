@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../static/style.css">
+	<title>Predictor</title>
+</head>
+<body>
+	<div class="img"></div>
+	<div class="header">
+		<h1>House Price Prediction</h1>
+	</div>
+	<div class="container">
+		<div class="form">
+			<form action="/predict" method="post">
+				<div class="Area">
+					<label class="label_area">Area: </label>
+					<input class="Area_" type="text" placeholder="1000" name="AREA_name" id="">
+				</div>
+				<div class="switch-field">
+					<label class="mylabel" for="switch-field">BKH: </label>
+					<input type="radio" id="radio-bhk-1" name="BHK_name" value="1" />
+					<label for="radio-bhk-1">1</label>
+					<input type="radio" id="radio-bhk-2" name="BHK_name" value="2" checked />
+					<label for="radio-bhk-2">2</label>
+					<input type="radio" id="radio-bhk-3" name="BHK_name" value="3" />
+					<label for="radio-bhk-3">3</label>
+					<input type="radio" id="radio-bhk-4" name="BHK_name" value="4" />
+					<label for="radio-bhk-4">4</label>
+					<input type="radio" id="radio-bhk-5" name="BHK_name" value="5" />
+					<label for="radio-bhk-5">5</label>
+				</div>
+				<div class="switch-field">
+					<label class="mylabel" for="switch-field">Bath: </label>
+					<input type="radio" id="radio-bath-1" name="BATH_name" value="1" />
+					<label for="radio-bath-1">1</label>
+					<input type="radio" id="radio-bath-2" name="BATH_name" value="2" checked />
+					<label for="radio-bath-2">2</label>
+					<input type="radio" id="radio-bath-3" name="BATH_name" value="3" />
+					<label for="radio-bath-3">3</label>
+					<input type="radio" id="radio-bath-4" name="BATH_name" value="4" />
+					<label for="radio-bath-4">4</label>
+					<input type="radio" id="radio-bath-5" name="BATH_name" value="5" />
+					<label for="radio-bath-5">5</label>
+				</div>
+				<div class="switch-field">
+					<label class="mylabel" for="switch-field">Balcony: </label>
+					<input type="radio" id="radio-balcony-1" name="BALCONY_name" value="1" />
+					<label for="radio-balcony-1">1</label>
+					<input type="radio" id="radio-balcony-2" name="BALCONY_name" value="2" checked />
+					<label for="radio-balcony-2">2</label>
+					<input type="radio" id="radio-balcony-3" name="BALCONY_name" value="3" />
+					<label for="radio-balcony-3">3</label>
+					<input type="radio" id="radio-balcony-4" name="BALCONY_name" value="4" />
+					<label for="radio-balcony-4">4</label>
+					<input type="radio" id="radio-balcony-5" name="BALCONY_name" value="5" />
+					<label for="radio-balcony-5">5</label>
+				</div>
+				<div class="btn">
+					<button type="submit">
+						Estimate
+					</button>
+				</div>
+
+			</form>
+
+			<div>
+				<h1 class="Value">
+					<b style="color: rgba(15, 8, 20, 0.794);
+					border-bottom: 4px solid #9a41eeca;
+					padding: 8px;
+					border-radius: 5px;">{{price}} Lakhs</b>
+				</h1>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
